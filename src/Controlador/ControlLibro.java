@@ -63,13 +63,13 @@ public class ControlLibro {
         
       //  vista.getBtnimprimir().addActionListener(l->imprimirReporte());
         vista.getBtnguardar().addActionListener(l->newLibro());  
-        vista.getBtnmodificar().addActionListener(l->editarPersona());
+        vista.getBtnmodificar().addActionListener(l->editarLibro());
         vista.getBtnExaminarP().addActionListener(l->cargarImagen());
         vista.getBtnActualizaL().addActionListener(l->cargalista());
         vista.getBtncrear().addActionListener(l-> muestraDialogo());
         vista.getBtnEditarL().addActionListener(l->muestraDialogoeditar());
         vista.getBtnCancelarP().addActionListener(l->ocultarDialogo());
-        vista.getBtnEliminarL().addActionListener(l->eliminarPersona());
+        vista.getBtnEliminarL().addActionListener(l->eliminarLibro());
        // vista.getBtnsearch().addActionListener(l->search());
         vista.getTxtBuscarL().addKeyListener(new KeyListener() {
             
@@ -381,7 +381,7 @@ public class ControlLibro {
     }
     
     
-    private void editarPersona(){
+    private void editarLibro(){
    
         String codlibro = vista.getTxtCodigo().getText();
         
@@ -419,7 +419,7 @@ public class ControlLibro {
     
 
     
-    private void eliminarPersona(){
+    private void eliminarLibro(){
     
         
         int fila = vista.getTablacatalogo().getSelectedRow();

@@ -36,11 +36,20 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
         jToolBar1 = new javax.swing.JToolBar();
         btncatalogo = new javax.swing.JToggleButton();
         jToggleButton1 = new javax.swing.JToggleButton();
+        jToggleButton3 = new javax.swing.JToggleButton();
+        jToggleButton2 = new javax.swing.JToggleButton();
         Desktop = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuCrudpersonas = new javax.swing.JMenu();
         MitenCrudPersonas = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -63,6 +72,20 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
         jToggleButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(jToggleButton1);
 
+        jToggleButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Report.png"))); // NOI18N
+        jToggleButton3.setText("Reportes");
+        jToggleButton3.setFocusable(false);
+        jToggleButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jToggleButton3);
+
+        jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Exit.png"))); // NOI18N
+        jToggleButton2.setText("Salir");
+        jToggleButton2.setFocusable(false);
+        jToggleButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jToggleButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(jToggleButton2);
+
         javax.swing.GroupLayout DesktopLayout = new javax.swing.GroupLayout(Desktop);
         Desktop.setLayout(DesktopLayout);
         DesktopLayout.setHorizontalGroup(
@@ -74,7 +97,7 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
             .addGap(0, 501, Short.MAX_VALUE)
         );
 
-        mnuCrudpersonas.setText("Opciones");
+        mnuCrudpersonas.setText("Menu");
 
         MitenCrudPersonas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Boss.png"))); // NOI18N
         MitenCrudPersonas.setText("Añadir Libros");
@@ -85,6 +108,42 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
         mnuCrudpersonas.add(jMenuItem2);
 
         jMenuBar1.add(mnuCrudpersonas);
+
+        jMenu1.setText("Institucion Educativa");
+
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/About.png"))); // NOI18N
+        jMenuItem1.setText("Mision");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuItem3.setText("Vision");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem3);
+
+        jMenuItem6.setText("Ubicacion");
+        jMenu1.add(jMenuItem6);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Contactos");
+
+        jMenuItem4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Dial.png"))); // NOI18N
+        jMenuItem4.setText("Telefono");
+        jMenu2.add(jMenuItem4);
+
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/User group.png"))); // NOI18N
+        jMenuItem5.setText("Redes Sociales");
+        jMenu2.add(jMenuItem5);
+
+        jMenuBar1.add(jMenu2);
 
         jMenu4.setText("Ayuda");
         jMenuBar1.add(jMenu4);
@@ -110,6 +169,14 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     public JDesktopPane getDesktop() {
         return Desktop;
@@ -150,10 +217,19 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
     private javax.swing.JDesktopPane Desktop;
     private javax.swing.JMenuItem MitenCrudPersonas;
     private javax.swing.JToggleButton btncatalogo;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JToggleButton jToggleButton1;
+    private javax.swing.JToggleButton jToggleButton2;
+    private javax.swing.JToggleButton jToggleButton3;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JMenu mnuCrudpersonas;
     // End of variables declaration//GEN-END:variables

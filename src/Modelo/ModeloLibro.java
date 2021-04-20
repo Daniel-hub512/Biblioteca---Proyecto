@@ -51,6 +51,7 @@ public class ModeloLibro extends Libro {
         super(cod_libro, titulo, sinopsis, categoria, editorial, estado);
     } 
     
+    
     public boolean grabar(){
         
         String foto64 = null;

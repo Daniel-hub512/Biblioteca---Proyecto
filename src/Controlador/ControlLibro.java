@@ -134,7 +134,7 @@ public class ControlLibro {
             vista.getTablacatalogo().setValueAt(p1.getEstado(), i.value , 5);
             vista.getTablacatalogo().setValueAt(p1.getAño_publicacion(), i.value , 6);
         
-  
+
             
            Image img = p1.getFoto();
            if(img!=null){
@@ -265,7 +265,6 @@ public class ControlLibro {
    
         try {
             
-      
         String codlibro = vista.getTxtCodigo().getText();
         String titulo = vista.getTxtTitulo().getText();
         String sinopsis = vista.getTxtSinopsis().getText();
@@ -273,23 +272,18 @@ public class ControlLibro {
         String editorial = vista.getTxtEditorial().getText();
         String estado = vista.getTxtEstado().getText();
         String añopublicacion = vista.getTxtAñopublicacion().getText();
-  
-        
-
-        
-          
+     
         ModeloLibro libro = new ModeloLibro(codlibro, titulo, sinopsis, cateogoria, editorial, estado,añopublicacion);
        
             ImageIcon ic= (ImageIcon)vista.getLblFotoL().getIcon();
             libro.setFoto(ic.getImage());
         
         try {
-                
-           
+      
         if(libro.grabar()){
             vista.getDlgCatalogo().setVisible(false);
             cargalista();
-            JOptionPane.showMessageDialog(vista,"Libro Guardada Correctamente");
+            JOptionPane.showMessageDialog(vista,"Libro Guardado Correctamente");
             
             }
             

@@ -45,7 +45,7 @@ public class ControlLogin {
     
     }
     
-       
+
     public void Validacion(){
     
 
@@ -60,7 +60,7 @@ public class ControlLogin {
             
             JOptionPane.showMessageDialog(view, "Campos incorrectos, Intentelo de nuevo");
         }else{
-            
+                      
             ModeloBibliotecario b = new ModeloBibliotecario();
                 
             List<Bibliotecario> lista = b.DatosBibliotecario();
@@ -73,19 +73,8 @@ public class ControlLogin {
                    Bibliotecario p = lista.get(i);
                    user = p.getNombre();
                    pass = p.getId_bibliotecario();
-                                     
-                    System.out.println(user);
-                    System.out.println(pass);
-        
-                if(usuario.equals(user) && contraseña.equalsIgnoreCase(pass)){}
-                
-                     view.dispose();
-                     
-                     ControlPrincipal cp = new ControlPrincipal(mp);
-                     
-                     cp.InicioControl();
-                     
-                     
+                                    
+                     condicion(user, pass,mp);
                 
                 }
         }
@@ -94,10 +83,39 @@ public class ControlLogin {
     
     }
     
+    public void refrescar(){
+        view.getTxtuser().setText("");
+        view.getTxtpass().setText("");
+    }
     
     public void Salir(){
     
         view.dispose();
     }
     
+    
+    public void condicion(String user, String pass,VistaMenuPrincipalBiblioteca mp){
+    
+        String usuario = view.getTxtuser().getText();
+        String contraseña = view.getTxtpass().getText();
+        
+            System.out.println(user);
+            System.out.println(pass);
+        
+        
+        if(user.equals(usuario) && pass.equals(contraseña)){
+                
+            view.dispose();
+                     
+            ControlPrincipal cp = new ControlPrincipal(mp);
+                     
+             cp.InicioControl();
+        }else{
+            JOptionPane.showMessageDialog(view, "Campos incorrectos, Intentelo de nuevo");
+            refrescar();
+            
+        }
+        
+    }
+  
 }

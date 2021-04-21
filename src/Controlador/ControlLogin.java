@@ -98,10 +98,7 @@ public class ControlLogin {
     
         String usuario = view.getTxtuser().getText();
         String contraseña = view.getTxtpass().getText();
-        
-            System.out.println(user);
-            System.out.println(pass);
-        
+
         
         if(user.equals(usuario) && pass.equals(contraseña)){
                 

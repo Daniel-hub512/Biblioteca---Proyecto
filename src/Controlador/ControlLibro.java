@@ -43,9 +43,9 @@ public class ControlLibro {
         this.vista = vista;
         
         
-        vista.setResizable(true);
         
-        vista.setMaximizable(true);
+        
+       
         vista.setClosable(true);
         
         vista.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
@@ -229,7 +229,7 @@ public class ControlLibro {
    
         vista.getTxtCodigo().setEditable(true);
         Refrescar();
-        vista.getDlgCatalogo().setLocationRelativeTo(vista);
+        vista.getDlgCatalogo().setLocationRelativeTo(null);
         vista.getDlgCatalogo().setTitle("DATOS DE EL LIBRO");
         vista.getDlgCatalogo().setSize(760, 470);
        
@@ -249,9 +249,9 @@ public class ControlLibro {
        
     
      
-        vista.getDlgCatalogo().setLocationRelativeTo(vista);
+        vista.getDlgCatalogo().setLocationRelativeTo(null);
         vista.getDlgCatalogo().setTitle("ACTUALIZAR INFORMACION - LIBRO");
-        vista.getDlgCatalogo().setSize(740, 635);
+        vista.getDlgCatalogo().setSize(760, 470);
        // vista.getDlgpersona().setSize(484, 635);
         vista.getDlgCatalogo().setVisible(true);
        

@@ -47,6 +47,7 @@ public class ControlPrincipal {
     
         menup.getBtncatalogo().addActionListener(l->ShowBooks());
         menup.getBtnprestamos().addActionListener(l->ShowRegistrations());
+        menup.getBtnsalir().addActionListener(l->exit());
     }
  
     
@@ -84,6 +85,12 @@ public class ControlPrincipal {
     }    
     
     
+
+    public void exit(){
     
+        menup.dispose();
+        System.exit(0);
+    }    
+        
     
 }

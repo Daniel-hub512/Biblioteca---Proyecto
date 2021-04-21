@@ -8,8 +8,10 @@ package Controlador;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import modelo.ModeloLibro;
+import modelo.ModeloPrestamo;
 import vistas.VistaCatalogo;
 import vistas.VistaMenuPrincipalBiblioteca;
+import vistas.VistaPrestamos;
 
 /**
  *
@@ -44,7 +46,7 @@ public class ControlPrincipal {
     public void InicioControl(){
     
         menup.getBtncatalogo().addActionListener(l->ShowBooks());
-    
+        menup.getBtnprestamos().addActionListener(l->ShowRegistrations());
     }
  
     
@@ -63,5 +65,25 @@ public class ControlPrincipal {
         cl.inicioControl();
         cl.cargalista();
     }
-      
+ 
+    
+    
+    public void ShowRegistrations(){
+    
+    
+        ModeloPrestamo mp = new ModeloPrestamo();
+        VistaPrestamos vp = new VistaPrestamos();
+        
+        
+        menup.getDesktop().add(vp);
+        
+        ControlPrestamo cl = new ControlPrestamo(mp, vp);
+        
+        cl.inicioControl();
+        cl.cargalista();
+    }    
+    
+    
+    
+    
 }

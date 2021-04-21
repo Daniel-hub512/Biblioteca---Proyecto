@@ -237,19 +237,23 @@ public class VistaCatalogo extends javax.swing.JInternalFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
         lblMensajes = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         dlgCatalogo.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Título");
         dlgCatalogo.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 95, 81, -1));
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Categoría");
-        dlgCatalogo.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 60, -1));
+        dlgCatalogo.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 170, 70, -1));
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Código");
         dlgCatalogo.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 55, 81, -1));
@@ -264,13 +268,15 @@ public class VistaCatalogo extends javax.swing.JInternalFrame {
         dlgCatalogo.getContentPane().add(btnCancelarP, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 410, -1, -1));
         dlgCatalogo.getContentPane().add(txtAñopublicacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 167, -1));
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Editorial");
         dlgCatalogo.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 215, -1, -1));
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Sinopsis");
-        dlgCatalogo.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 135, 47, -1));
+        dlgCatalogo.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 135, 60, -1));
         dlgCatalogo.getContentPane().add(txtSinopsis, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 132, 167, -1));
 
         lblFotoL.setToolTipText("");
@@ -280,13 +286,15 @@ public class VistaCatalogo extends javax.swing.JInternalFrame {
         btnExaminarP.setText("Examinar...");
         dlgCatalogo.getContentPane().add(btnExaminarP, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 280, -1, -1));
 
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Estado");
         dlgCatalogo.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 250, 50, 20));
 
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Año Publicación");
-        dlgCatalogo.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, -1, -1));
+        dlgCatalogo.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
         dlgCatalogo.getContentPane().add(txtEditorial, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 210, 167, -1));
         dlgCatalogo.getContentPane().add(txtEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 250, 167, -1));
 
@@ -299,8 +307,15 @@ public class VistaCatalogo extends javax.swing.JInternalFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("BUSCAR");
+        jPanel1.setBackground(new java.awt.Color(255, 251, 242));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setText("BUSCAR");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 26, 60, -1));
+        jPanel1.add(txtBuscarL, new org.netbeans.lib.awtextra.AbsoluteConstraints(77, 23, 234, -1));
+
+        tablacatalogo.setBackground(new java.awt.Color(240, 170, 4));
+        tablacatalogo.setForeground(new java.awt.Color(0, 51, 153));
         tablacatalogo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -311,6 +326,9 @@ public class VistaCatalogo extends javax.swing.JInternalFrame {
         ));
         jScrollPane1.setViewportView(tablacatalogo);
 
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 827, 260));
+
+        jToolBar1.setBackground(new java.awt.Color(240, 170, 4));
         jToolBar1.setRollover(true);
 
         btncrear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/crearlibro.png"))); // NOI18N
@@ -319,96 +337,59 @@ public class VistaCatalogo extends javax.swing.JInternalFrame {
         btncrear.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btncrear);
 
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel8.setForeground(new java.awt.Color(0, 0, 153));
         jLabel8.setText("Agregar Libro");
         jToolBar1.add(jLabel8);
 
         btnEditarL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Listalibro.png"))); // NOI18N
         jToolBar1.add(btnEditarL);
 
+        jLabel9.setForeground(new java.awt.Color(0, 0, 153));
         jLabel9.setText("Editar Libro");
         jToolBar1.add(jLabel9);
 
         btnEliminarL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/bote-de-basura-abierto.png"))); // NOI18N
         jToolBar1.add(btnEliminarL);
 
+        jLabel10.setForeground(new java.awt.Color(0, 0, 153));
         jLabel10.setText("Eliminar Libro");
         jToolBar1.add(jLabel10);
 
         btnActualizaL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/crearAl.png"))); // NOI18N
         jToolBar1.add(btnActualizaL);
 
+        jLabel11.setForeground(new java.awt.Color(0, 0, 153));
         jLabel11.setText("Actualizar");
         jToolBar1.add(jLabel11);
 
+        jPanel1.add(jToolBar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 58, 598, 77));
+
         jLabel15.setText("*Titulo");
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(362, 23, 45, -1));
 
         jLabel16.setText("*Categoria");
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(425, 23, 65, -1));
 
         jLabel17.setText("*Editorial");
+        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(508, 23, 65, -1));
 
         jLabel18.setText("*Estado");
+        jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(585, 23, 65, -1));
 
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/user.png"))); // NOI18N
         jButton1.setText("Autor");
         jButton1.setFocusable(false);
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(636, 66, 104, 55));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(txtBuscarL, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(51, 51, 51)
-                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 827, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 598, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(59, 59, 59)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 23, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel1)
-                        .addComponent(txtBuscarL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGap(21, 21, 21)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 297, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(52, 52, 52))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/logoliceo.png"))); // NOI18N
+        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 50, 80, 80));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 850, 460));
 
+        lblMensajes.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblMensajes.setForeground(new java.awt.Color(255, 255, 255));
         lblMensajes.setText("Catalogo Biblioteca 1.0");
         getContentPane().add(lblMensajes, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 480, 228, 31));
@@ -441,6 +422,7 @@ public class VistaCatalogo extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

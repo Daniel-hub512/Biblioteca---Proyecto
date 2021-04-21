@@ -35,9 +35,9 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
 
         jToolBar1 = new javax.swing.JToolBar();
         btncatalogo = new javax.swing.JToggleButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
-        jToggleButton3 = new javax.swing.JToggleButton();
-        jToggleButton2 = new javax.swing.JToggleButton();
+        btnprestamos = new javax.swing.JToggleButton();
+        btnreportes = new javax.swing.JToggleButton();
+        btnsalir = new javax.swing.JToggleButton();
         Desktop = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         mnuCrudpersonas = new javax.swing.JMenu();
@@ -65,26 +65,26 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
         btncatalogo.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btncatalogo);
 
-        jToggleButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Shopping cart.png"))); // NOI18N
-        jToggleButton1.setText("Prestamos");
-        jToggleButton1.setFocusable(false);
-        jToggleButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jToggleButton1);
+        btnprestamos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Shopping cart.png"))); // NOI18N
+        btnprestamos.setText("Prestamos");
+        btnprestamos.setFocusable(false);
+        btnprestamos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnprestamos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnprestamos);
 
-        jToggleButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Report.png"))); // NOI18N
-        jToggleButton3.setText("Reportes");
-        jToggleButton3.setFocusable(false);
-        jToggleButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jToggleButton3);
+        btnreportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Report.png"))); // NOI18N
+        btnreportes.setText("Reportes");
+        btnreportes.setFocusable(false);
+        btnreportes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnreportes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnreportes);
 
-        jToggleButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Exit.png"))); // NOI18N
-        jToggleButton2.setText("Salir");
-        jToggleButton2.setFocusable(false);
-        jToggleButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jToggleButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(jToggleButton2);
+        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/Exit.png"))); // NOI18N
+        btnsalir.setText("Salir");
+        btnsalir.setFocusable(false);
+        btnsalir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnsalir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jToolBar1.add(btnsalir);
 
         javax.swing.GroupLayout DesktopLayout = new javax.swing.GroupLayout(Desktop);
         Desktop.setLayout(DesktopLayout);
@@ -113,19 +113,9 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
 
         jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/vistas/imagenes/About.png"))); // NOI18N
         jMenuItem1.setText("Mision");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
         jMenu1.add(jMenuItem1);
 
         jMenuItem3.setText("Vision");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
-            }
-        });
         jMenu1.add(jMenuItem3);
 
         jMenuItem6.setText("Ubicacion");
@@ -170,14 +160,6 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
-
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
-
     public JDesktopPane getDesktop() {
         return Desktop;
     }
@@ -210,6 +192,31 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
         this.btncatalogo = btncatalogo;
     }
 
+    public JToggleButton getBtnprestamos() {
+        return btnprestamos;
+    }
+
+    public void setBtnprestamos(JToggleButton btnprestamos) {
+        this.btnprestamos = btnprestamos;
+    }
+
+    public JToggleButton getBtnreportes() {
+        return btnreportes;
+    }
+
+    public void setBtnreportes(JToggleButton btnreportes) {
+        this.btnreportes = btnreportes;
+    }
+
+    public JToggleButton getBtnsalir() {
+        return btnsalir;
+    }
+
+    public void setBtnsalir(JToggleButton btnsalir) {
+        this.btnsalir = btnsalir;
+    }
+
+    
 
 
     
@@ -217,6 +224,9 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
     private javax.swing.JDesktopPane Desktop;
     private javax.swing.JMenuItem MitenCrudPersonas;
     private javax.swing.JToggleButton btncatalogo;
+    private javax.swing.JToggleButton btnprestamos;
+    private javax.swing.JToggleButton btnreportes;
+    private javax.swing.JToggleButton btnsalir;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu4;
@@ -227,9 +237,6 @@ public class VistaMenuPrincipalBiblioteca extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JToggleButton jToggleButton1;
-    private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JToggleButton jToggleButton3;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JMenu mnuCrudpersonas;
     // End of variables declaration//GEN-END:variables

@@ -94,8 +94,9 @@ public class ControlPrestamo {
         vp.getTxtID_usuario().setText("");
         vp.getTxtcodigoP().setText("");
         vp.getTxtcodigoejemplar().setText("");
-        vp.getJdcFechaD().setDateFormatString("");
-        vp.getJdcFechap().setDateFormatString("");
+        vp.getJdcFechaD().setDate(null);
+        vp.getJdcFechap().setDate(null);
+        vp.getBtnguardarpt().setEnabled(true);
 
     }       
         
@@ -210,6 +211,10 @@ public class ControlPrestamo {
     }
         
     private void textoRegistro(){
+        
+        vp.getBtnguardarpt().setEnabled(false);
+        
+        
         
         int fila = vp.getTablaprestamos().getSelectedRow();
         

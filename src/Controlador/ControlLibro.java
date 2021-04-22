@@ -234,14 +234,12 @@ public class ControlLibro {
         vista.getDlgCatalogo().setSize(760, 470);
        
         vista.getDlgCatalogo().setVisible(true);
-  
-       
-                
-    
+   
     } 
     
     
     private void muestraDialogoeditar(){
+        
         
         vista.getBtnmodificar().setVisible(true);
         vista.getBtnguardar().setVisible(false);

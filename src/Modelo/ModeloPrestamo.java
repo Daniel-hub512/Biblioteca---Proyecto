@@ -154,7 +154,7 @@ public boolean grabar(){
     
     
      public boolean Eliminar(){
-    String sql="Delete from \"registro\" "
+    String sql="Delete from \"prestamos\" "
             + "WHERE cod_registro='"+getCod_registro()+"'; ";
     if(con.noQuery(sql)==null){
      return true;
